@@ -38,4 +38,3 @@ Columns include:
 ---
 
 
-git clone https://github.com/your-username/Google-Stock-Prediction.git
