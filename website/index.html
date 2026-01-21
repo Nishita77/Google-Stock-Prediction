@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Stock Price Prediction | LSTM</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Google Stock Price Prediction</h1>
+    <p>Using LSTM Deep Learning Model</p>
+    <a href="https://github.com/Nishita77/Google-Stock-Prediction" target="_blank">
+      View GitHub
+    </a>
+  </header>
+
+  <!-- ABOUT PROJECT -->
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>
+      Stock price prediction is challenging due to the volatile and non-linear
+      nature of financial markets. This project uses a Long Short-Term Memory
+      (LSTM) deep learning model to predict Google stock prices based on
+      historical market data.
+    </p>
+  </section>
+
+  <!-- PROBLEM STATEMENT -->
+  <section id="problem">
+    <h2>Problem Statement</h2>
+    <p>
+      Traditional statistical models fail to capture long-term dependencies
+      present in stock market data. This project addresses the limitation by
+      using LSTM networks, which are capable of learning temporal patterns
+      from time-series data.
+    </p>
+  </section>
+
+  <!-- HOW MODEL WORKS -->
+  <section id="working">
+    <h2>How the Model Works</h2>
+
+    <ul>
+      <li>
+        <strong>Data Collection:</strong>
+        Historical Google stock price data is collected from Yahoo Finance,
+        including Open, High, Low, Close, and Volume.
+      </li>
+
+      <li>
+        <strong>Data Preprocessing:</strong>
+        The dataset is cleaned, normalized using MinMaxScaler, and transformed
+        into 60-day time steps suitable for LSTM input.
+      </li>
+
+      <li>
+        <strong>LSTM Model Training:</strong>
+        A deep learning LSTM model is trained to learn long-term dependencies
+        in stock price movements.
+      </li>
+
+      <li>
+        <strong>Prediction:</strong>
+        The trained model predicts future stock prices, which are later
+        compared with actual values.
+      </li>
+    </ul>
+  </section>
+
+  <!-- MODEL FLOW -->
+  <section id="flow">
+    <h2>Model Workflow</h2>
+    <p style="text-align: center; font-size: 18px; margin-top: 20px;">
+      Data Collection → Data Preprocessing → LSTM Training → Prediction →
+      Visualization
+    </p>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results">
+    <h2>Results & Visualization</h2>
+
+    <p>
+      The graph below compares the actual Google stock prices with the prices
+      predicted by the LSTM model. The model effectively captures the overall
+      trend in stock price movements.
+    </p>
+
+    <img src="img/imagesprediction_graph.png" alt="Actual vs Predicted Stock Prices">
+  </section>
+
+  <!-- CONCLUSION -->
+  <section id="conclusion">
+    <h2>Conclusion & Future Scope</h2>
+
+    <p>
+      This project demonstrates the effectiveness of LSTM neural networks in
+      time-series forecasting of stock prices. While the model performs well
+      in predicting trends, it does not consider external economic or political
+      factors.
+    </p>
+
+    <ul>
+      <li>Integration of real-time stock data</li>
+      <li>Prediction for multiple companies</li>
+      <li>Deployment using Flask or FastAPI</li>
+      <li>Improving accuracy using attention mechanisms</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Major Project | B.Tech CSE <br>
+      Google Stock Price Prediction using LSTM
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
